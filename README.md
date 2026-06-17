@@ -1,6 +1,6 @@
 # DevTree Static
 
-A fully modular, developer-friendly static link tree for developers. Host it anywhere—GitHub Pages, Netlify, Vercel, or any static host.
+A fully modular, dev-friendly static link tree.
 
 ## Features
 
@@ -27,13 +27,16 @@ A fully modular, developer-friendly static link tree for developers. Host it any
 ## Quick Start
 
 ### 1. Clone and Setup
-```bash
+
+```zsh
 git clone https://github.com/bedlam520Dev/devtree-static.git
 cd devtree-static
 ```
 
 ### 2. Customize Your Profile
+
 Edit `config/profile.json` with your information:
+
 ```json
 {
   "name": "Your Name",
@@ -44,7 +47,9 @@ Edit `config/profile.json` with your information:
 ```
 
 ### 3. Add Your Links
+
 Edit `config/links.json`:
+
 ```json
 {
   "primary": [
@@ -59,13 +64,14 @@ Edit `config/links.json`:
 ```
 
 ### 4. Deploy
+
 - **GitHub Pages**: Push to repo, enable Pages in settings
 - **Netlify**: Connect repo, auto-deploys on push
 - **Vercel**: Import repo, instant deployment
 
 ## Project Structure
 
-```
+```md
 devtree-static/
 ├── index.html              # Main entry point
 ├── config/
@@ -95,6 +101,7 @@ devtree-static/
 ## Configuration
 
 ### Profile (`config/profile.json`)
+
 Centralized user profile information:
 - Name, title, bio
 - Avatar and banner images
@@ -102,6 +109,7 @@ Centralized user profile information:
 - Contact information
 
 ### Links (`config/links.json`)
+
 Organized link categories:
 - Primary links (featured)
 - Social links
@@ -109,6 +117,7 @@ Organized link categories:
 - Custom sections
 
 ### Theme (`config/theme.json`)
+
 Brand customization:
 - Color schemes
 - Font families
@@ -118,25 +127,30 @@ Brand customization:
 ## Development
 
 ### Without Build Tools
+
 Just open `index.html` in your browser or serve with any HTTP server:
-```bash
-python -m http.server 8000
+
+```zsh
+uv run -m http.server 8000
 # or
-npx http-server
+pnpm dlx http-server
 ```
 
 ### With Build Tools (Optional)
-```bash
-npm install
-npm run dev    # Development server
-npm run build  # Production build
-npm run lint   # Code quality
+
+```zsh
+pnpm install
+pnpm run dev    # Development server
+pnpm run build  # Production build
+pnpm run lint   # Code quality
 ```
 
 ## Customization
 
 ### Colors
+
 Edit `src/styles/theme.css` or `config/theme.json`:
+
 ```css
 :root {
   --primary: #your-color;
@@ -146,14 +160,17 @@ Edit `src/styles/theme.css` or `config/theme.json`:
 ```
 
 ### Components
+
 Each component is in `src/components/` with matching styles in `src/styles/components/`.
 
 ### Fonts
+
 Add custom fonts in `src/styles/main.css` and reference in `config/theme.json`.
 
 ## Features Deep Dive
 
-### Analytics
+### Analytics (Optional)
+
 Supports:
 - Google Analytics
 - Plausible
@@ -161,25 +178,22 @@ Supports:
 - Custom event tracking
 
 ### Social Links
+
 Auto-detect and icon 100+ social platforms.
 
-### Link Previews
-Optional: Show preview when hovering/tapping links.
+### Link Previews (Optional)
+
+Show preview when hovering/tapping links.
 
 ### Dark Mode
+
 Automatic detection with manual toggle option.
 
 ### Mobile Optimized
+
 - Touch-friendly tap targets
 - Optimized for small screens
 - Swipe gestures support
-
-## Deployment Guides
-
-- [GitHub Pages](docs/deploy-github-pages.md)
-- [Netlify](docs/deploy-netlify.md)
-- [Vercel](docs/deploy-vercel.md)
-- [Self-Hosted](docs/deploy-self-hosted.md)
 
 ## Performance
 
@@ -195,10 +209,6 @@ Automatic detection with manual toggle option.
 - Firefox: Latest 2 versions
 - Safari: Latest 2 versions
 - Mobile browsers: Latest versions
-
-## Contributing
-
-Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## License
 
