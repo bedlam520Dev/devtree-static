@@ -1,0 +1,1 @@
+{\n  \"enabled\": false,\n  \"provider\": null,\n  \"googleAnalytics\": {\n    \"enabled\": false,\n    \"id\": \"G-XXXXXXXXXX\"\n  },\n  \"plausible\": {\n    \"enabled\": false,\n    \"domain\": \"yoursite.com\"\n  },\n  \"fathom\": {\n    \"enabled\": false,\n    \"siteId\": \"XXXXXXXXX\"\n  },\n  \"trackEvents\": true\n}
